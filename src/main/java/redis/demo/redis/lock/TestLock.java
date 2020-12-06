@@ -33,33 +33,26 @@ public class TestLock {
 
             countDownLatch.countDown();
         }
-        Thread.sleep(3000);//等待下
-        int size2 = map.size();
+        Thread.sleep(5000);//等待下5s
         System.out.println(Thread.currentThread().getName() + "主线程等待子线程完成");
-
-        System.out.println("map总size" + size2);
         System.out.println("并发访问的num数字是：" + num);
-
     }
-
     public static class Task implements Runnable {
         Task() {
         }
-
         @Override
         public void run() {
             try {
                 countDownLatch.await();// 100个并发蓄势待发攻击
                 // redis 分布锁式大招，一夫当关！
-                redisLock.lock();
+//                redisLock.lock();
                 Thread.sleep(200);
-                map.put(num, num);
                 num = num + 1;
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
                 //死都要解锁，不留死锁后患！
-                redisLock.unlock();
+//                redisLock.unlock();
             }
         }
     }

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277c7bf0-3369-4397-a528-8d45b5d5aac6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/getSet.lua" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/unlock.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607162863034</updated>
-      <workItem from="1607162864466" duration="7651000" />
+      <workItem from="1607162864466" duration="7904000" />
     </task>
     <servers />
   </component>
@@ -92,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加git ignore" />
   </component>
 </project>

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="277c7bf0-3369-4397-a528-8d45b5d5aac6" name="Default Changelist" comment="" />
+    <list default="true" id="277c7bf0-3369-4397-a528-8d45b5d5aac6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main/java/redis/demo/redis" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lEWj3OXWxAiuz7pXNAy66EOmEQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +42,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="TestLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="redis.demo.redis.lock.TestLock" />
+      <module name="lock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="redis.demo.redis.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestLock" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
@@ -44,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607162863034</updated>
-      <workItem from="1607162864466" duration="6963000" />
+      <workItem from="1607162864466" duration="7651000" />
     </task>
     <servers />
   </component>

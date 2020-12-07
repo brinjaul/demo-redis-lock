@@ -4,15 +4,19 @@ import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.scripting.support.ResourceScriptSource;
+import redis.clients.jedis.JedisPoolConfig;
 
+import java.time.Duration;
 import java.util.Collections;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -72,10 +76,32 @@ public class RedisLock extends AbstractLock {
         config.setHostName("127.0.0.1");
         config.setPort(6379);
         config.setDatabase(0);
+    //使用链接池=====begin
+        RedisProperties.Pool pool = new RedisProperties.Pool();
+        pool.setMaxActive(1000);
+        pool.setMaxWait(Duration.ofMillis(-1L));
+        pool.setMaxIdle(10);
+        pool.setMinIdle(5);
 
+        RedisProperties redisProperties = new RedisProperties();
+        redisProperties.setDatabase(0);
+        redisProperties.setPort(6379);
+        redisProperties.setHost("127.0.0.1");
+        redisProperties.getJedis().setPool(pool);
+
+        JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
+        jedisPoolConfig.setMaxIdle(10);
+        jedisPoolConfig.setMinIdle(5);
+        jedisPoolConfig.setMaxWaitMillis(-1L);
+
+//        new
+        //使用链接池=====end
 
 
         JedisConnectionFactory factory = new JedisConnectionFactory(config);
+        factory.setPoolConfig(jedisPoolConfig);
+        factory.setUsePool(true);
+//        JedisConnectionFactory factory = new JedisConnectionFactory(redisProperties);
         RedisTemplate objectObjectRedisTemplate = new RedisTemplate<>();
         objectObjectRedisTemplate.setConnectionFactory(factory);
         //配置序列化

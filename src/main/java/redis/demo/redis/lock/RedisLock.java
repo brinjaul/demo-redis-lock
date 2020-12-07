@@ -138,7 +138,6 @@ public class RedisLock extends AbstractLock {
     public boolean tryLock(long time, TimeUnit unit) {
         String uuid = UUID.randomUUID().toString().toLowerCase().replace("-", "");
         Boolean aBoolean = template.opsForValue().setIfAbsent(lockKey, uuid, time, unit);
-//        Boolean aBoolean = template.opsForValue().setIfAbsent(lockKey, lockKey);
         if (aBoolean) {
             System.out.println("加锁\t" + uuid);
             local.set(uuid);

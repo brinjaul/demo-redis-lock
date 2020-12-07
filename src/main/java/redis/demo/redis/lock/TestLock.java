@@ -32,7 +32,7 @@ public class TestLock {
         redisLock.getScriptByTemplate("unlock.lua");
         System.out.println("开始");
         int i = 0;
-        ExecutorService executorService = Executors.newFixedThreadPool(20);
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         for (; i < time; i++) {
 
             Task task = new Task(redisLock);
@@ -51,7 +51,6 @@ public class TestLock {
 
         Task(RedisLock redisLock) {
             this.redisLock = redisLock;
-
         }
 
         @Override
@@ -62,7 +61,7 @@ public class TestLock {
                 redisLock.lock();
                 Thread.sleep(50);
                 num = num + 1;
-                System.out.println(Thread.currentThread().getName()+"计算结果为："+num);
+                System.out.println(Thread.currentThread().getName()+"计算结果："+num);
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {

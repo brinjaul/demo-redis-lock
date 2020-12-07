@@ -31,7 +31,7 @@ public abstract class AbstractLock implements Lock {
             return ;
         }else {
             try {
-                Thread.sleep(100);
+                Thread.sleep(100);//睡眠一会然后下面递归调用在此抢锁
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

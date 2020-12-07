@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="277c7bf0-3369-4397-a528-8d45b5d5aac6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/getSet.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/TestRediSpringTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/AbstractLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/RedisLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/redis/demo/redis/lock/TestLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/unlock.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/redis/demo/AppTest.class" beforeDir="false" />
+    <list default="true" id="277c7bf0-3369-4397-a528-8d45b5d5aac6" name="Default Changelist" comment="增加git ignore">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lock.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/demo/redis/lock/RedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/redis/demo/redis/lock/RedisLock.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="224" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lock" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +37,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\future\ideaWorkSpace\demoList\redis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607162863034</updated>
-      <workItem from="1607162864466" duration="7904000" />
+      <workItem from="1607162864466" duration="23805000" />
     </task>
     <servers />
   </component>
@@ -97,5 +109,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加git ignore" />
     <option name="LAST_COMMIT_MESSAGE" value="增加git ignore" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lock$TestLock.ic" NAME="TestLock Coverage Results" MODIFIED="1607269775269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>redis.demo.redis.lock.*</FILTER>
+    </SUITE>
   </component>
 </project>
